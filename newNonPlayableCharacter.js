@@ -57,3 +57,23 @@ function newNonPlayableCharacter(x, y) {
         stop: stop
     }
 }
+
+// defines sleep function so await/promise can be used for directions.
+//sleep with a time will wait the given number of sections before
+//doing an action.
+
+//Syntax: function test() {
+//     sleep(5000)
+//         .then(() => console.log('Function!'))
+// }
+
+//Alt Syntax: async function test(){
+//             await sleep(5000)
+//             console.log('Function')
+// }
+
+function sleep(time){
+    return new Promise(resolve => {
+        setTimeout(resolve, time)
+    })
+}
