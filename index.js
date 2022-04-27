@@ -7,6 +7,7 @@ const npc = newNonPlayableCharacter(50, 300)
 // have the NPC start walking east immediately
 // Await only works inside a function.
 //This function moves NPC and changes directions.
+
 async function moveNPC(){
     await npc.walkNorth(1400)
     await npc.walkEast(1200)
@@ -17,7 +18,9 @@ async function moveNPC(){
     npc.walkNorth(400)
 }
 
+//invokes the moveNPC function
 moveNPC()
+
 
 
 
